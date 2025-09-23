@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largura e Altura da Janela</title>
+    <script>
+        function myFunction() {
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var x = document.getElementById("demo");
+            x.innerHTML = "Largura: " + w + "px | Altura: " + h + "px";
+        }
+    </script>
+</head>
+<body>
+    <h2>Largura e Altura da Janela</h2>
+    <p id="demo">
+        Clique no botão para ver a largura e altura da janela.
+    </p>
+    <button onclick="myFunction()">Ver Largura e Altura</button>
+</body>
+</html>
