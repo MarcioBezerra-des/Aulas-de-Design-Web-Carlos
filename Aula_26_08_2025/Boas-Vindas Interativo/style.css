@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Novo container para organizar os blocos verticalmente */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adiciona um espaço entre os dois quadrados */
+}
+
+/* Estilo para o título virar um quadrado */
+h1 {
+    background: #333;
+    color: #fff;
+    padding: 20px 48px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Estilo do resultado sem o posicionamento absoluto */
+#resultado {
+    background: #333;
+    color: #fff;
+    padding: 32px 48px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    min-width: 320px;
+    text-align: center;
+    font-size: 1.1rem;
+}
