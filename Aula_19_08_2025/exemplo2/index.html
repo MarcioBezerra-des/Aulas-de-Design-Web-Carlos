@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Externos</title>
+    <script>
+        function myFunction() {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    Insira seu nome: <input type="text" id="fname" onkeyup="myFunction()">
+    <p>
+        Ao clicarmos fora do input text o texto escrito nele ficará todo em caixa alta.
+    </p>
+    <h4>Aluno: Marcio Bezerra Cavalcanti Junior</h4>
+    <h5>4º Semestre - Ciência da Computação</h5>
+</body>
+</html>
