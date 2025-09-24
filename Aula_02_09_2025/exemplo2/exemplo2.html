@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <h2>Status do Jogador</h2>
+    <div id="status"></div>
+    <div id="velocidade"></div>
+
+    <script>
+        let energia = 100;
+        let velocidade = 0;
+        let mensagem = "";
+
+        if (energia > 80 && energia <= 100) {
+            mensagem = "Energia alta";
+            velocidade = 100;
+        } else if (energia > 60 && energia <= 80) {
+            mensagem = "Energia boa";
+            velocidade = 80;
+        } else if (energia > 40 && energia <= 60) {
+            mensagem = "Jogador médio";
+            velocidade = 60;
+        } else if (energia > 20 && energia <= 40) {
+            mensagem = "Jogador baixo";
+            velocidade = 40;
+        } else if (energia > 1 && energia <= 20) {
+            mensagem = "Jogador crítico";
+            velocidade = 20;
+        } else {
+            mensagem = "Jogador morto";
+            velocidade = 0;
+        }
+
+        document.getElementById("status").innerHTML = `<p>${mensagem}</p>`;
+        document.getElementById("velocidade").innerHTML = `<p>Velocidade: ${velocidade}</p>`;
+    </script>
+</body>
+</html>
