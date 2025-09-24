@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Interativo - Condições com AND e OR</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        b {
+            color: #333;
+        }
+        .true {
+            color: green;
+            font-weight: bold;
+        }
+        .false {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercício Interativo: Condições com AND e OR</h1>
+    <hr>
+
+    <script>
+        // Definição das variáveis conforme a imagem
+        const n1 = 20;
+        const n2 = 40;
+        const n3 = 60;
+        const n4 = 80;
+
+        // Exibindo os valores iniciais na tela
+        document.write("<h2>Valores:</h2>");
+        document.write("<p>n1 = " + n1 + "</p>");
+        document.write("<p>n2 = " + n2 + "</p>");
+        document.write("<p>n3 = " + n3 + "</p>");
+        document.write("<p>n4 = " + n4 + "</p>");
+        document.write("<hr>");
+
+        // --- Início da verificação das condições ---
+
+        document.write("<h2>Resultados das Condições:</h2>");
+
+        // Condição 1: n1 >= 10 E n2 < 50
+        const resultado1 = n1 >= 10 && n2 < 50;
+        document.write("<p><b>Condição 1 (n1 >= 10 && n2 < 50):</b> <span class='" + resultado1 + "'>" + resultado1 + "</span></p>");
+
+        // Condição 2: n3 >= 60 OU n4 <= 100
+        const resultado2 = n3 >= 60 || n4 <= 100;
+        document.write("<p><b>Condição 2 (n3 >= 60 || n4 <= 100):</b> <span class='" + resultado2 + "'>" + resultado2 + "</span></p>");
+
+        // Condição 3: (n1 >= 50 E n2 <= 40) OU (n3 >= 70 E n4 <= 80)
+        const resultado3 = (n1 >= 20 && n2 <= 40) || (n3 >= 70 && n4 <= 80);
+        document.write("<p><b>Condição 3 ((n1 >= 20 && n2 <= 40) || (n3 >= 70 && n4 <= 80)):</b> <span class='" + resultado3 + "'>" + resultado3 + "</span></p>");
+
+        // Condição 4: n1 < 15 OU (n2 > 30 E n3 < 70)
+        const resultado4 = n1 < 15 || (n2 > 30 && n3 < 70);
+        document.write("<p><b>Condição 4 (n1 < 15 || (n2 > 30 && n3 < 70)):</b> <span class='" + resultado4 + "'>" + resultado4 + "</span></p>");
+        
+        // Condição 5: n1 diferente de 50 E n4 maior ou igual a 80
+        const resultado5 = n1 != 50 && n4 >= 80;
+        document.write("<p><b>Condição 5 (n1 != 50 && n4 >= 80):</b> <span class='" + resultado5 + "'>" + resultado5 + "</span></p>");
+    </script>
+
+</body>
+</html>
