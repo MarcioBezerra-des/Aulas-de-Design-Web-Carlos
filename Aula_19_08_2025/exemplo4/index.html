@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)">Clique e segure aqui
+        <style>
+            div {
+                background-color: #D94A38;
+                width: 120px;
+                height: 20px;
+                padding: 40px;
+            }
+        </style>
+    </div>
+
+    <script>
+        function mDowm(obj) {
+            obj.style.backgroundColor = "#D9D938";
+            obj.innerHTML = "Solte o clique";
+        }
+
+        function mUp(obj) {
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "Obrigado!";
+        }
+    </script>
+</body>
+</html>
