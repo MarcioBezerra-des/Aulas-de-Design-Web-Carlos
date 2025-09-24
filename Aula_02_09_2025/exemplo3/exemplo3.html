@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 3</title>
+</head>
+<body>
+    <h2>Resultado:</h2>
+    <div id="mensagem"></div>
+
+    <script>
+        let pontos = 70;
+        let Resultado = "";
+
+        if (pontos < 34 || pontos > 65) {
+            Resultado = "Jogador venceu";
+        } else {
+            Resultado = "Jogador perdeu";
+        }
+
+        document.getElementById("mensagem").innerHTML = `<p>${Resultado}</p>`;
+    </script>
+</body>
+</html>
